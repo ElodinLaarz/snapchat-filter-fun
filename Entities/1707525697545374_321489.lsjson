@@ -1,0 +1,79 @@
+{
+    "1707525697542683:321488": {
+        "IFileManager": {
+            "path": "Files/File_1707525697542683_321488.pvr"
+        }
+    },
+    "1707525697545374:321489": {
+        "IResourceController": {
+            "name": "euler",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707525697545661:321490",
+            "fileId": "1707525697542683:321488",
+            "originalId": "1707525697546000:321495",
+            "publicId": "1707525697556535:321497",
+            "expected_hash": "38bb873ad1f687778502e3f8802e4fa2",
+            "additional": {
+                "originHash": "b930741146acdc1c4b5608b3d51f7a6f"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1707525697545661:321490",
+            "name": "Files/File_1707525697542683_321488.jpg",
+            "flags": 1
+        }
+    },
+    "1707525697545661:321490": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "b930741146acdc1c4b5608b3d51f7a6f"
+                    },
+                    "v": "1707525700147174:322797"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "133280",
+                "compressedSize": "74647",
+                "extension": "jpg",
+                "originalRAM": "1060800",
+                "originalSize": "63449",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1707525697549208:321496"
+        }
+    },
+    "1707525697546000:321495": {
+        "IFileManager": {
+            "path": "Files/File_1707525697546000_321495.jpg"
+        }
+    },
+    "1707525697549208:321496": {
+        "IFileManager": {
+            "path": "Files/File_1707525697549208_321496.jpg"
+        }
+    },
+    "1707525697556535:321497": {
+        "IResourceController": {
+            "public": {
+                "path": "Images/euler.jpg",
+                "hash": "b930741146acdc1c4b5608b3d51f7a6f"
+            }
+        }
+    },
+    "1707525700147174:322797": {
+        "IFileManager": {
+            "path": "Files/File_1707525700147174_322797.pvr"
+        }
+    }
+}

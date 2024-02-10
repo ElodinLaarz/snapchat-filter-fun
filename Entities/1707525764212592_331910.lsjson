@@ -1,0 +1,79 @@
+{
+    "1707525764201197:331909": {
+        "IFileManager": {
+            "path": "Files/File_1707525764201197_331909.pvr"
+        }
+    },
+    "1707525764212592:331910": {
+        "IResourceController": {
+            "name": "gauss",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707525764213048:331911",
+            "fileId": "1707525764201197:331909",
+            "originalId": "1707525764213513:331916",
+            "publicId": "1707525764230656:331926",
+            "expected_hash": "d81984809ccab3caa41cd09bb7c43478",
+            "additional": {
+                "originHash": "af7dbb0f7cfbf297888d662b88f6d572"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1707525764213048:331911",
+            "name": "Files/File_1707525764201197_331909.jpg",
+            "flags": 1
+        }
+    },
+    "1707525764213048:331911": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "af7dbb0f7cfbf297888d662b88f6d572"
+                    },
+                    "v": "1707525782180071:335161"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "919200",
+                "compressedSize": "659633",
+                "extension": "jpg",
+                "originalRAM": "7339200",
+                "originalSize": "267867",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1707525764220066:331919"
+        }
+    },
+    "1707525764213513:331916": {
+        "IFileManager": {
+            "path": "Files/File_1707525764213513_331916.jpg"
+        }
+    },
+    "1707525764220066:331919": {
+        "IFileManager": {
+            "path": "Files/File_1707525764220066_331919.jpg"
+        }
+    },
+    "1707525764230656:331926": {
+        "IResourceController": {
+            "public": {
+                "path": "Images/gauss.jpg",
+                "hash": "af7dbb0f7cfbf297888d662b88f6d572"
+            }
+        }
+    },
+    "1707525782180071:335161": {
+        "IFileManager": {
+            "path": "Files/File_1707525782180071_335161.pvr"
+        }
+    }
+}

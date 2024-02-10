@@ -1,0 +1,33 @@
+{
+    "1707528054705582:874811": {
+        "IFileManager": {
+            "path": "Files/File_1707528054705582_874811.ttf"
+        }
+    },
+    "1707528054707489:874812": {
+        "IResourceController": {
+            "name": "DancingScript",
+            "type": 13,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707528054707504:874813",
+            "fileId": "1707528054705582:874811",
+            "publicId": "1707528054708538:874818",
+            "expected_hash": "78132c6450403faefc3f440b2bb3b24a"
+        },
+        "IResourceManager": {
+            "uid": "1707528054707504:874813",
+            "name": "Files/File_1707528054705582_874811.ttf",
+            "flags": 1
+        }
+    },
+    "1707528054708538:874818": {
+        "IResourceController": {
+            "public": {
+                "path": "Text/DancingScript.ttf",
+                "hash": "78132c6450403faefc3f440b2bb3b24a"
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "1707528490777965:964362": {
+        "IResourceController": {
+            "name": "Text",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1707528490778105:964363",
+            "resources": [
+                "1707528044795447:873035",
+                "1707528054707489:874812"
+            ]
+        }
+    },
+    "1707528490778105:964363": {
+        "IResourceController": {
+            "public": {
+                "path": "Text"
+            }
+        }
+    }
+}

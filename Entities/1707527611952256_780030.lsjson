@@ -1,0 +1,39 @@
+{
+    "1707527611952256:780030": {
+        "IResourceController": {
+            "name": "Tilt_Head_Object_Example",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707527611952216:780027",
+            "fileId": "1707527611963389:780036",
+            "originalId": "1707527954153652:853575",
+            "publicId": "1707527612274025:780285",
+            "expected_hash": "dd82251b5f5fd3f3377f4ba81708da29"
+        },
+        "IResourceManager": {
+            "uid": "1707527611952216:780027",
+            "name": "sceneObject_35",
+            "flags": 0
+        }
+    },
+    "1707527611963389:780036": {
+        "IFileManager": {
+            "path": "Files/File_1707527611963389_780036.oprfb"
+        }
+    },
+    "1707527612274025:780285": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Tilt_Head_Object_Example.oprfb",
+                "hash": "32b871a277e3ab21c99f3d7d1d113a94"
+            }
+        }
+    },
+    "1707527954153652:853575": {
+        "IFileManager": {
+            "path": "Files/File_1707527954153652_853575.oprfb"
+        }
+    }
+}

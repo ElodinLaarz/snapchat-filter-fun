@@ -1,0 +1,38 @@
+{
+    "1707527612020113:780098": {
+        "IFileManager": {
+            "path": "Files/File_1707527612020113_780098.js"
+        }
+    },
+    "1707527612021729:780099": {
+        "IResourceController": {
+            "name": "UsageExample",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707527612021745:780100",
+            "fileId": "1707527612020113:780098",
+            "publicId": "1707527612026764:780114",
+            "expected_hash": "782e122070b76b02d37c67728c71ecb8"
+        },
+        "IResourceManager": {
+            "uid": "1707527612021745:780100",
+            "name": "Files/File_1707527612020113_780098.js",
+            "flags": 1
+        }
+    },
+    "1707527612021745:780100": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1707527612026764:780114": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/TIlt Head Left_Right Resources/Example [DELETE ME]/UsageExample.js",
+                "hash": "782e122070b76b02d37c67728c71ecb8"
+            }
+        }
+    }
+}

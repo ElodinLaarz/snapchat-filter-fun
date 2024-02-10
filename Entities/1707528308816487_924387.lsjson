@@ -1,0 +1,38 @@
+{
+    "1707528308814521:924386": {
+        "IFileManager": {
+            "path": "Files/File_1707528308814521_924386.js"
+        }
+    },
+    "1707528308816487:924387": {
+        "IResourceController": {
+            "name": "Prime Script Magic",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707528308816504:924388",
+            "fileId": "1707528308814521:924386",
+            "publicId": "1707528308817857:924393",
+            "expected_hash": "c64d74612e3a37497308ddeeca48fbb2"
+        },
+        "IResourceManager": {
+            "uid": "1707528308816504:924388",
+            "name": "Files/File_1707528308814521_924386.js",
+            "flags": 1
+        }
+    },
+    "1707528308816504:924388": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1707528308817857:924393": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Prime Script Magic.js",
+                "hash": "c64d74612e3a37497308ddeeca48fbb2"
+            }
+        }
+    }
+}

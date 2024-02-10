@@ -1,0 +1,42 @@
+{
+    "1707526630315837:520912": {
+        "IFileManager": {
+            "path": "Files/File_1707526630315837_520912.webp"
+        }
+    },
+    "1707526630318752:520913": {
+        "IResourceController": {
+            "name": "primes",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707526630319107:520914",
+            "fileId": "1707526630315837:520912",
+            "originalId": "1707526630319501:520919",
+            "publicId": "1707526630346656:520920",
+            "expected_hash": "775c3ca8eb4e98a13c29896efcdcc1e1",
+            "additional": {
+                "originHash": "775c3ca8eb4e98a13c29896efcdcc1e1"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1707526630319107:520914",
+            "name": "Files/File_1707526630315837_520912.webp",
+            "flags": 1
+        }
+    },
+    "1707526630319501:520919": {
+        "IFileManager": {
+            "path": "Files/File_1707526630319501_520919.webp"
+        }
+    },
+    "1707526630346656:520920": {
+        "IResourceController": {
+            "public": {
+                "path": "Images/primes.webp",
+                "hash": "775c3ca8eb4e98a13c29896efcdcc1e1"
+            }
+        }
+    }
+}

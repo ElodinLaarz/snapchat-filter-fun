@@ -1,0 +1,24 @@
+{
+    "1707528439251547:950820": {
+        "IResourceController": {
+            "name": "Images",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1707528439251725:950821",
+            "resources": [
+                "1707525697545374:321489",
+                "1707525764212592:331910",
+                "1707526630318752:520913"
+            ]
+        }
+    },
+    "1707528439251725:950821": {
+        "IResourceController": {
+            "public": {
+                "path": "Images"
+            }
+        }
+    }
+}

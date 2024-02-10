@@ -1,0 +1,24 @@
+{
+    "1707527612024826:780112": {
+        "IResourceController": {
+            "name": "Example [DELETE ME]",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1707527612024988:780113",
+            "resources": [
+                "1707527612035429:780122",
+                "1707527612154181:780152",
+                "1707527612021729:780099"
+            ]
+        }
+    },
+    "1707527612024988:780113": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/TIlt Head Left_Right Resources/Example [DELETE ME]"
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "1707527612154181:780152": {
+        "IResourceController": {
+            "name": "Materials",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1707527612154357:780153",
+            "resources": [
+                "1707527612080579:780138",
+                "1707527612189762:780169"
+            ]
+        }
+    },
+    "1707527612154357:780153": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/TIlt Head Left_Right Resources/Example [DELETE ME]/Materials"
+            }
+        }
+    }
+}

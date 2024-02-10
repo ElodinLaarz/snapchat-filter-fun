@@ -1,0 +1,39 @@
+{
+    "1707527612188538:780168": {
+        "IFileManager": {
+            "path": "Files/File_1707527612188538_780168"
+        }
+    },
+    "1707527612189762:780169": {
+        "IResourceController": {
+            "name": "Grey",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707527612189766:780170",
+            "fileId": "1707527612188538:780168",
+            "originalId": "1707527612201257:780174",
+            "publicId": "1707527612265503:780183",
+            "expected_hash": "6f3710ab7c9b47ee4e8212940b9df611"
+        },
+        "IResourceManager": {
+            "uid": "1707527612189766:780170",
+            "name": "Files/File_1707527612188538_780168",
+            "flags": 1
+        }
+    },
+    "1707527612201257:780174": {
+        "IFileManager": {
+            "path": "Files/File_1707527612201257_780174.lsmat"
+        }
+    },
+    "1707527612265503:780183": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/TIlt Head Left_Right Resources/Example [DELETE ME]/Materials/Grey.lsmat",
+                "hash": "299658e6e7d7352ef647aa9e10dee073"
+            }
+        }
+    }
+}
