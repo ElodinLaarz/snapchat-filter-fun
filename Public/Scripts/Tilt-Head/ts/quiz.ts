@@ -1,4 +1,3 @@
-import { right } from '../../../../Support/StudioLib';
 const DEFAULT_LIVES = 2;
 
 enum Choice {
