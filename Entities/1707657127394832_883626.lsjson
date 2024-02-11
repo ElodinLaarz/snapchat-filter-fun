@@ -1,0 +1,39 @@
+{
+    "1707657127393589:883625": {
+        "IFileManager": {
+            "path": "Files/File_1707657127393589_883625"
+        }
+    },
+    "1707657127394832:883626": {
+        "IResourceController": {
+            "name": "Red",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707657127394836:883627",
+            "fileId": "1707657127393589:883625",
+            "originalId": "1707657127414743:883631",
+            "publicId": "1707657127477762:883642",
+            "expected_hash": "90c6d8527fdfc472b09ed1273ba061f3"
+        },
+        "IResourceManager": {
+            "uid": "1707657127394836:883627",
+            "name": "Files/File_1707657127393589_883625",
+            "flags": 1
+        }
+    },
+    "1707657127414743:883631": {
+        "IFileManager": {
+            "path": "Files/File_1707657127414743_883631.lsmat"
+        }
+    },
+    "1707657127477762:883642": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/TIlt Head Left_Right Resources/Example [DELETE ME]/Materials/Red.lsmat",
+                "hash": "b64337cfcad552a6486099cac31c66f0"
+            }
+        }
+    }
+}

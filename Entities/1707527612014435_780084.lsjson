@@ -14,7 +14,7 @@
             "uid": "1707527612014447:780085",
             "fileId": "1707527612012797:780083",
             "publicId": "1707527612019711:780097",
-            "expected_hash": "9bb2a66675a48e039daa5344e7b3393f"
+            "expected_hash": "8942d15803787c4a5b3201fccd07db53"
         },
         "IResourceManager": {
             "uid": "1707527612014447:780085",
@@ -31,7 +31,7 @@
         "IResourceController": {
             "public": {
                 "path": "Scripts/TIlt Head Left_Right Resources/Tilt Head.js",
-                "hash": "9bb2a66675a48e039daa5344e7b3393f"
+                "hash": "8942d15803787c4a5b3201fccd07db53"
             }
         }
     }

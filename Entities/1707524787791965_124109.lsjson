@@ -6,10 +6,10 @@
         "InspectorComponent": {
             "Component.ScreenTransform": {
                 "basicModeSetup": {
-                    "attachBottom": "true",
+                    "attachBottom": "false",
                     "attachLeft": "false",
                     "attachRight": "false",
-                    "attachTop": "false",
+                    "attachTop": "true",
                     "fixHeight": "false",
                     "fixWidth": "false"
                 },
