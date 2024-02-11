@@ -3,6 +3,8 @@
 // Event: On Awake
 // Description: Set up Head Component and calculate and trigger head right, left and reset event.
 
+import {} from "./primes";
+
 //@input float angle {"widget" : "slider", "min" : 0, "max" : 90, "step" : 0.1}
 /** @type {number} */
 let angle = script.angle;
@@ -39,6 +41,8 @@ head.setParent(so);
 let headTransform = head.getTransform();
 let headComponent = head.createComponent("Component.Head");
 headComponent.faceIndex = faceIndex;
+
+let quizState = new QuizState();
 
 script.createEvent("OnStartEvent").bind(function () {
     resetState();
@@ -79,11 +83,6 @@ function bottomTextVisible(b) {
     script.scoreValue.enaled = b;
 }
 
-const DEFAULT_LIVES = 2;
-let quizState = {
-    firstTime: true,
-    end: false,
-};
 
 function resetState() {
     let prevScore = 0;
