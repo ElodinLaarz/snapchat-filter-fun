@@ -1,5 +1,4 @@
 # Shipped by Lens Studio
-
 !**/.vscode/extensions.json
 !**/.vscode/launch.template.json
 !**/.vscode/settings.template.json
@@ -16,9 +15,9 @@
 .parallelperf.*
 .settings
 .vscode/
-*.lock
 *.actual
 *.config
+*.lock
 *.lsproj.user
 *.swp
 **/.DS_Store
