@@ -1,11 +1,11 @@
 const DEFAULT_LIVES = 2;
 
-enum Choice {
+export enum Choice {
     Left,
     Right
 }
 
-class QuizState {
+export class QuizState {
     private gameStarted: boolean;
     private leftChoice: string;
     private rightChoice: string;

@@ -2,8 +2,7 @@
 // Version: 0.1.0
 // Event: On Awake
 // Description: Set up Head Component and calculate and trigger head right, left and reset event.
-
-import {QuizState} from "./quiz";
+import {Choice, QuizState} from "./quiz";
 
 //@input float angle {"widget" : "slider", "min" : 0, "max" : 90, "step" : 0.1}
 /** @type {number} */
@@ -74,6 +73,8 @@ function onUpdate() {
     }
 }
 
+let quizState = new QuizState(2);
+
 function bottomTextVisible(b) {
     script.attemptText.enaled = b;
     script.attemptValue.enaled = b;
@@ -104,32 +105,30 @@ function printCurrentState()  {
 }
 
 function onLeft() {
-    if (quizState.end) {
-        quizState.end = false;
-        resetState();
+    if (quizState.GuessChoice(Choice.Left)) {
+        script.indicator.mainMaterial = script.matGreen;
+    } else {
+        script.indicator.mainMaterial = script.matRed;
     }
-    script.indicator.mainMaterial = script.matGreen;
-
-    quizState.correctAnswers += 1;
-    script.leftChoice.text = "Left";
-    checkEnd();
+    // Maybe wait and show the factors or something.
+    printCurrentState();
 }
 
 function onRight() {
+    // Right Tilt disabled whilst game is over.
     if (quizState.end) {
         return;
     }
-    script.indicator.mainMaterial = script.matRed;
-
-    quizState.attemptsRemaining -= 1;
-    script.rightChoice.text = "Right";
-    checkEnd();
+    if (quizState.GuessChoice(Choice.Right)) {
+        script.indicator.mainMaterial = script.matGreen;
+    } else {
+        script.indicator.mainMaterial = script.matRed;
+    }
+    // Maybe wait and show the factors or something.
+    printCurrentState();
 }
 
 function onReset() {
     script.indicator.mainMaterial = script.matGrey;
-
-    script.leftChoice.text = "Default";
-    script.rightChoice.text = "Default";
     printCurrentState();
 }

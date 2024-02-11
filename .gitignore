@@ -16,6 +16,7 @@
 .parallelperf.*
 .settings
 .vscode/
+*.lock
 *.actual
 *.config
 *.lsproj.user

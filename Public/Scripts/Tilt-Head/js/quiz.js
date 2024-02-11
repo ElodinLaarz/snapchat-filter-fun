@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.QuizState = exports.Choice = void 0;
 var DEFAULT_LIVES = 2;
 var Choice;
 (function (Choice) {
     Choice[Choice["Left"] = 0] = "Left";
     Choice[Choice["Right"] = 1] = "Right";
-})(Choice || (Choice = {}));
+})(Choice || (exports.Choice = Choice = {}));
 var QuizState = /** @class */ (function () {
     function QuizState(lives) {
         this.lives = lives;
@@ -121,3 +122,4 @@ var QuizState = /** @class */ (function () {
     };
     return QuizState;
 }());
+exports.QuizState = QuizState;
