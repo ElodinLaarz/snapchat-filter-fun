@@ -117,7 +117,7 @@
     "1707527612051145:780136": {
         "IResourceController": {
             "public": {
-                "path": "Scripts/TIlt Head Left_Right Resources/Example [DELETE ME]/Sphere.mesh",
+                "path": "Scripts/Tilt-Head/quiz-objects-and-mats/Sphere.mesh",
                 "hash": "ffbce66d7c12d942b13208740e9d0059"
             }
         }

@@ -19,17 +19,17 @@ export class QuizState {
     public nextComposite: number;
     public nextPrime: number;
 
-    constructor(lives: number) {
-        this.lives = lives;
+    constructor() {
+        this.lives = DEFAULT_LIVES;
         this.score = 0;
         this.questionNumber = 0;
 
         this.gameStarted = false;
-        this.leftChoice = "Tilt Head";
+        this.leftChoice = "Tilt Head Left";
         this.rightChoice = "To Start";
         
-        this.nextComposite = 1;
-        this.nextPrime = 2;
+        this.nextComposite = 0;
+        this.nextPrime = 0;
     }
 
     public getLives(): number {
@@ -45,6 +45,14 @@ export class QuizState {
     }
 
     public GuessChoice(c:Choice): boolean {
+        if (!this.gameStarted) {
+            if (c === Choice.Right) {
+                return true;
+            }
+            this.gameStarted = true;
+            this.generateQuestion();
+            return true;
+        }
         if (!(c == this.answer)) {
             this.wrongAnswer();
             return false;
@@ -66,24 +74,18 @@ export class QuizState {
         }
     }
 
-    // Generates a random integer between min and max, inclusive.
-    // The integer returned is guaranteed to be greater than 1 so
-    // that a product of two such numbers is never prime.
-    private getRandomFactor(min, max: number): number {
-        // Lets us assume min < max and max > 2.
-        if ((min >= max) || max <= 2) {
-            return 2;
-        }
-        min = Math.max(2, min);
+    // Generates a random integer between min and max.
+    // Assumes min < max-- will explode and do bad things otherwise.
+    private randomIntInRange(min, max: number): number {
         return Math.round(Math.random() * (max-min))+min;
     }
-    // Generates a random composite integer between 2^q and 2^(q+1),
+    // Generates a random biprime on the order of 2^(q+1),
     // where q is the current question number.
     private generateComposite(): number {
-        let q = this.questionNumber;
-        let numOne = this.getRandomFactor(2 ** q, 2 ** (q+1));
-        let numTwo = this.getRandomFactor(2 ** q, 2 ** (q+1));
-        return numOne * numTwo;
+        let exponent = Math.floor((this.questionNumber)/2);
+        let primeOne = this.generatePrime(exponent);
+        let primeTwo = this.generatePrime(exponent);
+        return primeOne * primeTwo;
     }
 
     private isPrime(n: number): boolean {
@@ -93,11 +95,10 @@ export class QuizState {
         return n > 1;
     }
 
-    private generatePrime(): number {
-        let q = this.questionNumber;
-        let min = 2 ** q;
-        let max = 2 ** (q+1);
-        let num = this.getRandomFactor(min, max);
+    private generatePrime(exponent : number): number {
+        let min = 2 ** exponent;
+        let max = 2 ** (exponent + 1);
+        let num = this.randomIntInRange(min, max);
         while (!this.isPrime(num)) {
             num++;
         }
@@ -109,7 +110,7 @@ export class QuizState {
     private generateQuestion(): void {
         this.questionNumber++;
         this.nextComposite = this.generateComposite();
-        this.nextPrime = this.generatePrime();
+        this.nextPrime = this.generatePrime(this.questionNumber);
         this.showQuestion();
     }
     private showQuestion(): void {
@@ -138,8 +139,8 @@ export class QuizState {
     public reset() : void {
         this.gameStarted = false;
         this.lives = DEFAULT_LIVES;
-        this.nextComposite = 1;
-        this.nextPrime = 2;
+        this.nextComposite = 0;
+        this.nextPrime = 0;
         this.questionNumber = 0;
         this.score = 0;
     }

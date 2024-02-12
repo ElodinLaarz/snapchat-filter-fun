@@ -1,0 +1,33 @@
+{
+    "1707661056255967:1632881": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Tilt-Head/ts/quiz.ts",
+                "hash": "e8421c9cf4ce4c5148494194d2b4d164"
+            }
+        }
+    },
+    "1707661056256428:1632882": {
+        "IFileManager": {
+            "path": "Files/File_1707661056256428_1632882.ts"
+        }
+    },
+    "1707661056258212:1632885": {
+        "IResourceController": {
+            "name": "quiz",
+            "type": 7,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707661056258226:1632886",
+            "fileId": "1707661056256428:1632882",
+            "publicId": "1707661056255967:1632881",
+            "expected_hash": "e8421c9cf4ce4c5148494194d2b4d164"
+        },
+        "IResourceManager": {
+            "uid": "1707661056258226:1632886",
+            "name": "Files/File_1707661056256428_1632882.ts",
+            "flags": 1
+        }
+    }
+}

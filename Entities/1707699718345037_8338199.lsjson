@@ -1,0 +1,38 @@
+{
+    "1707699718340643:8338197": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Tilt-Head/ts/quiz 2.js",
+                "hash": "9c2c1e5d762fd731154d42d6f5ccbe84"
+            }
+        }
+    },
+    "1707699718341460:8338198": {
+        "IFileManager": {
+            "path": "Files/File_1707699718341460_8338198.js"
+        }
+    },
+    "1707699718345037:8338199": {
+        "IResourceController": {
+            "name": "quiz 2",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1707699718345058:8338200",
+            "fileId": "1707699718341460:8338198",
+            "publicId": "1707699718340643:8338197",
+            "expected_hash": "9c2c1e5d762fd731154d42d6f5ccbe84"
+        },
+        "IResourceManager": {
+            "uid": "1707699718345058:8338200",
+            "name": "Files/File_1707699718341460_8338198.js",
+            "flags": 1
+        }
+    },
+    "1707699718345058:8338200": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    }
+}

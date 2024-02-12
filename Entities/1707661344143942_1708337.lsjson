@@ -1,0 +1,24 @@
+{
+    "1707661344142730:1708336": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Tilt-Head/js",
+                "hash": "d41d8cd98f00b204e9800998ecf8427e"
+            }
+        }
+    },
+    "1707661344143942:1708337": {
+        "IResourceController": {
+            "name": "js",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1707661344142730:1708336",
+            "resources": [
+                "1707527612014435:780084",
+                "1707688526720868:5783289"
+            ]
+        }
+    }
+}

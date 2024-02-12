@@ -2,7 +2,7 @@
 // Version: 0.1.0
 // Event: On Awake
 // Description: Set up Head Component and calculate and trigger head right, left and reset event.
-import {Choice, QuizState} from "./quiz";
+const quiz = require("quiz");
 
 //@input float angle {"widget" : "slider", "min" : 0, "max" : 90, "step" : 0.1}
 /** @type {number} */
@@ -41,7 +41,10 @@ let headTransform = head.getTransform();
 let headComponent = head.createComponent("Component.Head");
 headComponent.faceIndex = faceIndex;
 
+let quizState = null;
+
 script.createEvent("OnStartEvent").bind(function () {
+    quizState = new quiz.QuizState();
     resetState();
 });
 script.createEvent("UpdateEvent").bind(onUpdate);
@@ -73,7 +76,6 @@ function onUpdate() {
     }
 }
 
-let quizState = new QuizState(2);
 
 function bottomTextVisible(b) {
     script.attemptText.enaled = b;
@@ -89,7 +91,7 @@ function resetState() {
 }
 
 function checkEnd() {
-    if (quizState.attemptsRemaining == 0) {
+    if (quizState.lives == 0) {
         quizState.end = true;
         resetState();
         script.indicator.mainMaterial = script.matRed;
@@ -97,15 +99,15 @@ function checkEnd() {
 }
 
 function printCurrentState()  {
-    script.attemptValue.text = quizState.attemptsRemaining.toString();
-    script.scoreValue.text = quizState.correctAnswers.toString();
+    script.attemptValue.text = quizState.lives.toString();
+    script.scoreValue.text = quizState.score.toString();
     
-    script.leftChoice.text = quizState.leftChoice;
-    script.rightChoice.text = quizState.rightChoice;
+    script.leftChoice.text = quizState.leftChoice.toLocaleString();
+    script.rightChoice.text = quizState.rightChoice.toLocaleString();
 }
 
 function onLeft() {
-    if (quizState.GuessChoice(Choice.Left)) {
+    if (quizState.GuessChoice(quiz.Choice.Left)) {
         script.indicator.mainMaterial = script.matGreen;
     } else {
         script.indicator.mainMaterial = script.matRed;
@@ -119,7 +121,7 @@ function onRight() {
     if (quizState.end) {
         return;
     }
-    if (quizState.GuessChoice(Choice.Right)) {
+    if (quizState.GuessChoice(quiz.Choice.Right)) {
         script.indicator.mainMaterial = script.matGreen;
     } else {
         script.indicator.mainMaterial = script.matRed;

@@ -31,8 +31,8 @@
     "1707527612265503:780183": {
         "IResourceController": {
             "public": {
-                "path": "Scripts/TIlt Head Left_Right Resources/Example [DELETE ME]/Materials/Grey.lsmat",
-                "hash": "299658e6e7d7352ef647aa9e10dee073"
+                "path": "Scripts/Tilt-Head/quiz-objects-and-mats/Materials/Grey.lsmat",
+                "hash": "b74f68b267332dcde7f566414a5e83bf"
             }
         }
     }
